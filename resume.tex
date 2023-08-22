@@ -1,0 +1,216 @@
+\documentclass[a4paper]{MagicalCV}
+
+% Original Template: https://www.overleaf.com/latex/templates/magicalcv/ybfgdrchrrxj
+
+% Removing page numbers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\usepackage{graphicx}
+\graphicspath{ {./img/} }
+
+% Change the geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Defining your colors
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-purple}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Justify
+\usepackage{ragged2e}
+
+% start document
+\begin{document}
+
+% Last update time
+\lastupdated
+
+% Title name
+
+\hfill \break
+
+\namesection{Valentin}{Stamate}{
+\phone{+40752950124} \email{\href{mailto:stamatevalentin125@gmail.com}{stamatevalentin125@gmail.com}}}
+
+
+
+
+% ----==== FIRST COLUMN ====---- %
+\begin{minipage}[t]{0.38\textwidth} 
+
+
+% Education
+\cvsection{Education} 
+
+\includegraphics[height=4mm]{uaic.jpg} 
+\runsubsection{Alexandru Ioan Cuza \\ University} \\
+\descript{Master in Computer Science}
+\cvevent{Sept 2022 - Present}{Romania, Iași} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+First year
+\sectionsep
+
+\includegraphics[height=4mm]{uaic.jpg} 
+\runsubsection{Alexandru Ioan Cuza \\ University} \\
+\descript{Bachelor in Computer Science}
+\cvevent{Oct 2019 - Jun 2022}{Romania, Iași} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Thesis: 9.75 / 10
+\sectionsep
+
+\includegraphics[height=4mm]{ltni.jpg} 
+\runsubsection{Nicolae Iorga High School}
+\descript{Math \& Computer Science}
+\cvevent{Sep 2015 - May 2019}{Romania, Brăila}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+% Graduated with Distinctio
+\sectionsep
+
+% Links
+\cvsection{Links}
+
+\github{GitHub} \href{https://github.com/valentin-stamate}{\bf valentin-stamate} \\
+\linkedin{Linkedin} \href{https://www.linkedin.com/in/valentin-stamate/}{\bf valentin-stamate}
+\sectionsep
+
+% Volunteering
+\cvsection{Volunteering}
+\subsection{\href{https://www.asii.ro/}{ASII - IT Departament}}
+\cvevent{Oct 2022 - Present}{Romania, Iași}
+Helped on building components on the \href{https://fiipractic.asii.ro/}{FIIPractic} website using Next.Js and providing guidance regarding git.
+\sectionsep
+
+\subsection{\href{https://www.info.uaic.ro/scoala-doctorala/}{Doctoral School}}
+\cvevent{Feb 2021 - Apr 2022}{Romania, Iași}
+Helped on building the faculty doctoral page using WordPress.
+\sectionsep
+
+% Skills
+\cvsection{Skills}
+
+\subsection{Experienced In}
+Software Development \textbullet{} \href{https://github.com/valentin-stamate/Software-Engineering-Project}{\underline{Team Coordination}}
+\textbullet{} Design Patterns \textbullet{} \href{https://github.com/valentin-stamate/Data-Structures}{\underline{Data Structures}}
+\textbullet{} Algorithms \textbullet{} \href{https://github.com/valentin-stamate/Neural-Networks-Playground}{\underline{Neural Networks}}
+\textbullet{} \href{https://github.com/valentin-stamate/Genetic-Algorithms-Playground}{\underline{Genetic Algorithms}}
+\textbullet{} \href{https://github.com/valentin-stamate/OOP-Labs}{\underline{Object Oriented Programming}}
+\sectionsep
+
+\subsection{Programming Languages}
+Java \textbullet{} Typescript \textbullet{} Python \textbullet{} C/C++ \textbullet{} SQL \textbullet{} HTML  \textbullet{} CSS
+\sectionsep
+
+\subsection{Programming Technologies}
+Spring Boot \textbullet{} Angular \textbullet{} NodeJs \textbullet{} Express \textbullet{} React \textbullet{} Processing
+\sectionsep
+
+\subsection{Technologies}
+AWS \textbullet{} Git \textbullet{} Github Actions \textbullet{} Docker
+\sectionsep
+
+% Soft Skills
+\cvsection{Soft Skills} \\
+Self Learner \textbullet{} Critical Thinking \textbullet{} Teamwork
+
+
+
+
+% ----==== SECOND COLUMN ====---- %
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.59\textwidth} 
+
+
+% Experience
+\cvsection{Experience}
+
+\includegraphics[height=4mm]{fii.jpg}
+\runsubsection{Faculty Of Computer Science} \\
+\descript{Teaching Assistant}
+\cvevent{Feb 2023 – Present}{Romania, Iași}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+    \item Laboratories: Advanced Programming, 2nd year
+    \item Focused on learning Java as well as GUI, concurrency, JDBC, JPA, Spring, reflection and internalization.
+\end{tightemize}
+\sectionsep
+
+\includegraphics[height=4mm]{bandwidth.png}
+\runsubsection{Bandwidth} \\
+\descript{Software Developer}
+\cvevent{Jan 2023 – Present}{Romania, Iași}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+    \item \justify Help with the unification process by adding new features and improving the existing apps on both frontend and
+    backend.
+    
+\end{tightemize}
+\sectionsep
+
+\includegraphics[height=4mm]{amazon.jpg} 
+\runsubsection{Amazon} \\
+\descript{Software Engineer Intern}
+\cvevent{Jul 2022 – Nov 2022}{Romania, Iași} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+    \item \justify My role was to develop an API that ingest the 
+          licensed images from a stock image provider in order for the customers to find
+          assets easier. The project used many AWS services such as S3, Lambda,
+          Elastic Search, API Gateway and more.
+\end{tightemize}
+\sectionsep
+
+\includegraphics[height=4mm]{continental.png}
+\runsubsection{Continental} \\
+\descript{Software Developer Intern}
+\cvevent{Jul 2021 – Sep 2021, Oct 2021 – Apr 2022}{} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+    \item \justify Using a STM32 microcontroller we developed the detection of the automatic brake. My role was
+          creating the software behind it as well as the live plotting for visualizing the combined accelerometer vectors.
+\end{tightemize}
+\sectionsep
+
+% Recent Projects
+\cvsection{Recent Projects} 
+
+\runsubsection{\href{https://github.com/valentin-stamate/Aplicatia-de-Management-a-Activitatii-Academice}{Aplicatia de Management a Activitatii Doctorale - Thesis Project}} \\
+\descript{Angular | Express | Typescript | Postgres | Docker}
+\cvevent{Oct 2021 – Jun 2022}{}
+It helps by automating and centralizing the flow of data between professors, students and secretariat. It can export data inserted by students with one click, send emails to a big amount of users, generating daily activity paper(FAZ) for all coordinators and have an easy way of managing the application users.
+\sectionsep
+
+\runsubsection{\href{https://github.com/valentin-stamate/Conquering-The-Snake-Game}{Conquering the Snake}} \\
+\descript{Processing | Java | TensorFlow | Deep Q Learning}
+\cvevent{Mar 2021 – Dec 2021}{}
+Snake game with multiple game types. The current modes are: single player,
+two players, hamilton mode, genetic ai, \href{https://github.com/valentin-stamate/Neural-Network-Project}{\underline{neural ai}}. The genetic ai is
+made using a \href{https://github.com/valentin-stamate/Genetic-Algorithms-Playground}{\underline{genetic algorithm}} and a \href{https://github.com/valentin-stamate/Neural-Networks-Playground}{\underline{neural network library}} implemented from scratch.
+\sectionsep
+
+\runsubsection{\href{https://github.com/valentin-stamate/Conquering-The-Sorting-Algorithms}{Conquering the Sorting Algorithms}} \\
+\descript{Processing | Java}
+\cvevent{Apr 2019 – Jun 2021}{}
+Real time sorting for the most popular sorting algorithms.
+\sectionsep
+
+\end{minipage} 
+
+\end{document}  
